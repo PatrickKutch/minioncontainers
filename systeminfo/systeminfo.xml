@@ -1,0 +1,17 @@
+<Minion>
+	<Namespace>
+		<Name>$(Namespace)</Name>
+		<DefaultFrequency>$(Frequency)</DefaultFrequency>
+		<TargetConnection IP="$(OscarIP)" PORT="$(OscarPort)"/>
+		
+		<DynamicCollector SendOnlyOnChange="False">
+		   <Plugin>
+                	<PythonFile>Collectors/SystemInfo_Linux.py</PythonFile>
+                	<EntryPoint SpawnThread="True">CollectSystemInfo_Linux</EntryPoint>
+                	<Param>False</Param>
+		   </Plugin>
+		</DynamicCollector>		
+
+	</Namespace>
+</Minion>
+

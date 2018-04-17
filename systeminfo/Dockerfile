@@ -3,6 +3,7 @@ FROM python:3.5-slim
 
 # Board-Instrumentation-Framework has been cloned into this location
 # before doing the build
+COPY /Board-Instrumentation-Framework Board-Instrumentation-Framework
 WORKDIR /Board-Instrumentation-Framework/Minion
 COPY /ContainerLauncher.py .
 COPY /systeminfo.xml .

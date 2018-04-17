@@ -8,7 +8,7 @@
 		   <Plugin>
                 	<PythonFile>Collectors/SystemInfo_Linux.py</PythonFile>
                 	<EntryPoint SpawnThread="True">CollectSystemInfo_Linux</EntryPoint>
-                	<Param>False</Param>
+                	<Param>True</Param>
 		   </Plugin>
 		</DynamicCollector>		
 

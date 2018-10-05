@@ -19,7 +19,7 @@ def main():
     envVars["MarvinIP"]=marvinIP
     envVars["MarvinPort"]= marvinPort
     envVars["ListenPort"] = str(args.port)
-    print("Launching")
+    
     oscarProc = subprocess.Popen(["python", "Oscar.py", "-i", "OscarConfig.xml"],env=envVars)
     oscarProc.wait()
     

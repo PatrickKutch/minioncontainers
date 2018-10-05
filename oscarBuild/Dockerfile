@@ -7,7 +7,9 @@ FROM python:3.7-slim
 COPY /Board-Instrumentation-Framework Board-Instrumentation-Framework
 WORKDIR /Board-Instrumentation-Framework/Oscar
 # overwrite default config file
-COPY /OscarConfig.xml . 
+COPY /OscarConfig.xml /ContainerLauncher.py ./
 
-ENTRYPOINT  ["python", "Oscar.py","-vvvv"]
+
+ENTRYPOINT  ["python", "ContainerLauncher.py"]
+
 

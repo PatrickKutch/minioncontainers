@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Oscar ID="ContainerizedOscar">
-	<IncomingMinionConnection IP="0.0.0.0" PORT ="3232"/>
-	<MavinAutoConnect Key="WorkloadMapperKey"/>
-	<TargetConnection IP="10.166.11.193" PORT="6200"/>
+    <IncomingMinionConnection IP="0.0.0.0" PORT="$(ListenPort)"/>
+    <TargetConnection IP="$(MarvinIP)" PORT="$(MarvinPort)"/>
 </Oscar>
